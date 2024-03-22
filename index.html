@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paladium | Calculateur d'xp métier</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <div class="card">
+        <h1 class="card-title">Calculateur d'xp métier paladium</h1>
+        <div class="container">
+            <div class="calculator" id="calculator1">
+                <div class="jobs"></div>
+                <input id="message" class="message" type="text" placeholder="" disabled>
+                <input id="ActualLVL" class="input_text" type="number" placeholder="Niveau actuelle" required>
+                <input id="ActualXP" class="input_text" type="number" placeholder="XP du niveau actuelle" required>
+                <input id="BoostXP" class="input_text" type="number" placeholder="Bonus d'xp (en %)" required>
+                <input id="LVLReach" class="input_text" type="number" placeholder="Niveau souhaité" required>
+                <input id="Submit" class="input_submit" type="submit" value="Calculer">
+            </div>
+            <div id="result-calculator" class="result-calculator">
+                <h1>XP en bottle de 1000xp</h1>
+                <img class="bottle-img" src="./assets/images/potion_bottle_empty.png" alt="Empty Bottle">
+                <h1 id="number">0</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
