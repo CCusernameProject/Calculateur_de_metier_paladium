@@ -49,11 +49,19 @@ Submit.addEventListener("click", () => {
                 console.log("ERROR 03");
             }
         } else {
+<<<<<<< HEAD
             errorMessage("XP actuel non valable")
             console.log("ERROR 02")
         }
     } else {
         errorMessage("Niveau actuel non valable")
+=======
+            errorMessage("XP actuelle non valable")
+            console.log("ERROR 02")
+        }
+    } else {
+        errorMessage("Niveau actuelle non valable")
+>>>>>>> c6d7562d528f726f3958aa195bcf368b028a7e11
         console.log("ERROR 01")
     }
 });
