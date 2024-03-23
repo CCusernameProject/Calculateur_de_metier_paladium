@@ -53,7 +53,7 @@ Submit.addEventListener("click", () => {
             console.log("ERROR 02")
         }
     } else {
-        errorMessage("Niveau actuelle non valable")
+        errorMessage("Niveau actuel non valable")
         console.log("ERROR 01")
     }
 });
