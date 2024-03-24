@@ -34,27 +34,23 @@ Submit.addEventListener("click", () => {
                     message.placeholder = "Calcul effectué !";
                     message.classList.add('work_message_activate');
                     let totalXP = 0;
-                    for (let i = valueActualLVL; i <= valueLVLReach; i++) {
-                        totalXP += TableauXP[i - 1];
+                    for (let i = valueActualLVL; i < valueLVLReach; i++) {
+                        totalXP += TableauXP[i];
                     }
                     console.log("Total XP:", totalXP);
                     const FinalValue = Math.ceil((totalXP - valueActual) / XPperBottle);
                     numberOfBottle.innerHTML = FinalValue;
                 } else {
                     errorMessage("Niveau souhaité non valable")
-                    console.log("ERROR 04");
                 }
             } else {
                 errorMessage("Boost d'xp non valable")
-                console.log("ERROR 03");
             }
         } else {
             errorMessage("XP actuel non valable")
-            console.log("ERROR 02")
         }
     } else {
         errorMessage("Niveau actuel non valable")
-        console.log("ERROR 01")
     }
 });
 
